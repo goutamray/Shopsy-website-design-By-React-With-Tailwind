@@ -1,4 +1,5 @@
 import Navbar from "./components/navbar/Navbar"
+import Product from "./components/products/Product"
 import SliderD from "./components/slider/SliderD"
 
 
@@ -8,7 +9,7 @@ function App() {
     <>    
        <Navbar /> 
        <SliderD /> 
-        <h2> hello </h2>
+      <Product />
     </>
   )
 }

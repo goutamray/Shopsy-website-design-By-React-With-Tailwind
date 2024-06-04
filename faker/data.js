@@ -1,11 +1,15 @@
-import image1 from "../src/assets/women.png"; 
 import image2 from "../src/assets/shopping.png"; 
 import image3 from "../src/assets/sale.png"; 
 
+import Img1 from "../src/assets/women.png"; 
+import Img2 from "../src/assets/women2.jpg"
+import Img3 from "../src/assets/women3.jpg"
+import Img4 from "../src/assets/women4.jpg"
+import Img5 from "../src/assets/women5.jpg"
 export const ImageList = [
   {
     id: 1,
-    img: image1,
+    img: Img1,
     title: "Upto 50% off on all Men's Wear",
     description:
       "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -25,3 +29,50 @@ export const ImageList = [
       "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ];
+
+
+// ecommerce product 
+export const ProductsData = [
+  {
+    id: 1,
+    img: Img1,
+    title: "Women Ethnic",
+    rating: 5.0,
+    color: "White",
+    aosDelay: "0",
+  },
+  {
+    id: 2,
+    img: Img2,
+    title: "Women western",
+    rating: 4.5,
+    color: "Red",
+    aosDelay: "200",
+  },
+  {
+    id: 3,
+    img: Img3,
+    title: "Goggles",
+    rating: 4.7,
+    color: "brown",
+    aosDelay: "400",
+  },
+  {
+    id: 4,
+    img: Img4,
+    title: "Printed T-Shirt",
+    rating: 4.4,
+    color: "Yellow",
+    aosDelay: "600",
+  },
+  {
+    id: 5,
+    img: Img5,
+    title: "Fashin T-Shirt",
+    rating: 4.5,
+    color: "Pink",
+    aosDelay: "800",
+  },
+];
+
+
