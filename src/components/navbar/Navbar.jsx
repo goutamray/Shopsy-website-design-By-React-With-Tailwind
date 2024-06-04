@@ -3,6 +3,23 @@ import logo from "../../assets/logo.png"
 import { IoSearch } from "react-icons/io5";
 import { FaCartArrowDown } from "react-icons/fa"; 
 import { FaRegUserCircle } from "react-icons/fa"; 
+import { FaCaretDown } from "react-icons/fa"; 
+
+
+const dropDown = [
+    {
+      name : "Tending Products",
+      link : "/#",
+    },
+    {
+      name : "Featured Products",
+      link : "/#",
+    },
+    {
+      name : "Top Rated Products",
+      link : "/#",
+    },
+]; 
 
 const Navbar = () => {
   return (
@@ -25,7 +42,7 @@ const Navbar = () => {
                   </div>
               </div>
               <div className="order-btn">
-                <button onClick={()=> alert("Hello")} className="bg-primary duration-200 transition-all text-white py-1 px-3 rounded-full flex gap-3 items-center"> <span> Oder </span> <FaCartArrowDown  className="text-xl text-white drop-shadow-sm cursor-pointer"/> </button>
+                <button onClick={()=> alert("Hello")} className="bg-primary duration-200 transition-all text-white py-1 px-3 rounded-full flex gap-3 items-center"> <span > ORDER </span> <FaCartArrowDown  className="text-xl text-white drop-shadow-sm cursor-pointer"/> </button>
               </div>
               <div className="account-btn">
                 <button className="bg-primary rounded-full px-2 py-2"> <FaRegUserCircle className="text-xl text-white drop-shadow-sm cursor-pointer"/> </button>
@@ -42,12 +59,26 @@ const Navbar = () => {
             <li> <a className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Home </a></li>
             <li> <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> About </a></li>
             <li> <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Shop </a></li>
-            <li> <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Service </a></li>
+        
             <li> <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Blog </a></li>
-            <li> <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Contact </a></li>
+       
+            <li className="group relative cursor-pointer "> 
+              <a  className="text-xl font-medium hover:text-primary transition-all duration-300 flex gap-[3px] items-center" href="#"> Trending  <span> <FaCaretDown className=" transition-all duration-200 group-hover:rotate-180"/> </span></a>
+              <div className="absolute z-[9999] hidden group-hover:block w-[180px] rounded-md  bg-white p-2 text-black shadow-md"> 
+                <ul >
+                  {
+                    dropDown.map((item, index) => {
+                      return <li key={index}> <a className="inline-block w-full rounded-md p-2 hover:bg-primary/20" href="#" > {item.name}</a> </li>
+                    })
+                  }
+              
+                </ul>
+              </div>
+          </li>
+          <li> <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Contact </a></li> 
           </ul>
         </div>
-        <div className="theme-content flex gap-6">
+        <div className="theme-content flex gap-6  xs:hidden">
           <p className="text-[17px] text-primary font-medium cursor-pointer"> Special Offer </p>
           <p className="text-[17px] font-medium cursor-pointer"> Pursase Theme</p>
         </div>
