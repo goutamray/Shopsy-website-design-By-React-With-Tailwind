@@ -21,7 +21,8 @@ const dropDown = [
     },
 ]; 
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
+
   return (
 
     <div className="shadow-md bg-white 'dark:bg-gray-900' dark:bg-white "> 
@@ -42,7 +43,7 @@ const Navbar = () => {
                   </div>
               </div>
               <div className="order-btn">
-                <button onClick={()=> alert("Hello")} className="bg-primary duration-200 transition-all text-white py-1 px-3 rounded-full flex gap-3 items-center"> <span > ORDER </span> <FaCartArrowDown  className="text-xl text-white drop-shadow-sm cursor-pointer"/> </button>
+                <button onClick={()=> handleOrderPopup()} className="bg-primary duration-200 transition-all text-white py-1 px-3 rounded-full flex gap-3 items-center"> <span > ORDER </span> <FaCartArrowDown  className="text-xl text-white drop-shadow-sm cursor-pointer"/> </button>
               </div>
               <div className="account-btn">
                 <button className="bg-primary rounded-full px-2 py-2"> <FaRegUserCircle className="text-xl text-white drop-shadow-sm cursor-pointer"/> </button>

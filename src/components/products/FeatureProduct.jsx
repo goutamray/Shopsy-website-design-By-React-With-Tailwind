@@ -6,10 +6,10 @@ import { FaStar } from "react-icons/fa";
 import { ProductsData } from "../../../faker/data"; 
 
 
-const FeatureProduct = () => {
+const FeatureProduct = ({ handleOrderPopup }) => {
   return (
     <div>
-       <div className="mt-14 mb-12">
+       <div className="mt-14 mb-12 ">
         <div className="container">
           {/* product header section */}
             <div className="text-center max-w-[500px] mx-auto mb-10">
@@ -33,7 +33,7 @@ const FeatureProduct = () => {
                           </div>
                         </div>
                         <div className="ml-20 m-2">
-                           <button className="bg-primary px-3 py-1 rounded-md text-white mb-3 hover:bg-gray-500 transition-all duration-300 hover:text-white"> Buy Now </button>
+                           <button onClick={() => handleOrderPopup() } className="bg-primary px-3 py-1 rounded-md text-white mb-3 hover:bg-gray-500 transition-all duration-300 hover:text-white"> Buy Now </button>
                         </div>
                     </div>
                   })

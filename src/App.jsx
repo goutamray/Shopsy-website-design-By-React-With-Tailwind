@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Banner from "./components/banner/Banner"
 import Footer from "./components/footer/Footer"
 
@@ -8,21 +9,31 @@ import SliderD from "./components/slider/SliderD"
 import Subscribe from "./components/subscribe/Subscribe"
 import Testimonial from "./components/testimonial/Testimonial"
 import TopProduct from "./components/topProducts/TopProduct"
+import Popup from "./components/popup/Popup"
 
 
 
 function App() {
+
+  const [orderPopup, setOrderPopup ] = useState(false);
+
+  // handle order popup
+  const handleOrderPopup = () => {
+    setOrderPopup(!orderPopup); 
+  }
+
   return (
     <>    
-       <Navbar /> 
-       <SliderD /> 
-       <Product />
-       <TopProduct /> 
+       <Navbar handleOrderPopup = {handleOrderPopup}/> 
+       <SliderD handleOrderPopup = {handleOrderPopup}/> 
+       <Product handleOrderPopup = {handleOrderPopup}/>
+       <TopProduct handleOrderPopup = {handleOrderPopup}/> 
        <Banner /> 
        <Subscribe /> 
-       <FeatureProduct /> 
+       <FeatureProduct handleOrderPopup = {handleOrderPopup}/> 
        <Testimonial /> 
        <Footer />
+       <Popup orderPopup = {orderPopup} setOrderPopup = {setOrderPopup} /> 
     </>
   )
 }

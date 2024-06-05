@@ -60,7 +60,7 @@ const Testimonial = () => {
             <Slider {...settings}> 
                {
                 TestimonialData.map((item, index) => {
-                  return <div key={index}  className="mx-3"> 
+                  return <div  key={index}  className="mx-3"> 
                   <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-6 rounded-xl bg-primary/10 relative ">
                     <div className="mb-3">
                       <img className="w-20 h-20 rounded-full " src={item.img} alt="" />

@@ -2,7 +2,7 @@
 import { FaStar } from "react-icons/fa"; 
 import { TopData } from "../../../faker/data";
 
-const TopProduct = () => {
+const TopProduct = ({ handleOrderPopup }) => {
 
 
   return ( 
@@ -38,7 +38,7 @@ const TopProduct = () => {
                           <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2"> {item.description}</p>
                         </div>
                         <div className="flex justify-center items-center mb-4"> 
-                           <button className="bg-primary text-white px-4 py-2 rounded-full hover:scale-105 duration-300 group-hover:bg-white  group-hover:text-primary"> Order Now </button>
+                           <button onClick={() => handleOrderPopup() } className="bg-primary text-white px-4 py-2 rounded-full hover:scale-105 duration-300 group-hover:bg-white  group-hover:text-primary"> Order Now </button>
                        </div>
                       </div>
                     </div>

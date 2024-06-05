@@ -13,9 +13,9 @@ const BannerImg = {
 const Subscribe = () => {
   return (
     <>
-      <div>
+      <div data-aos="zoon-in" >
         <div
-        data-aos="zoon-in" className="bg-gray-100 text-white mb-20" style={BannerImg}>
+         className="bg-gray-100 text-white mb-20" style={BannerImg}>
              <div className="container backdrop-blur-sm py-12">
                  <div className=" max-w-xl mx-auto">
                   <h1 data-aos="fade-up" className="text-2xl !text-center sm:text-left sm:text-4xl font-semibold mb-3"> Get Notified About New Products </h1>
