@@ -6,6 +6,11 @@ import Img2 from "../src/assets/women2.jpg"
 import Img3 from "../src/assets/women3.jpg"
 import Img4 from "../src/assets/women4.jpg"
 import Img5 from "../src/assets/women5.jpg"
+
+import shirt1 from "../src/assets/shirt.png"
+import shirt2 from "../src/assets/shirt2.png" 
+import shirt3 from "../src/assets/shirt3.png"
+
 export const ImageList = [
   {
     id: 1,
@@ -75,4 +80,27 @@ export const ProductsData = [
   },
 ];
 
-
+// top data 
+export const TopData = [
+  {
+    id: 1,
+    img: shirt1,
+    title: "Casual Wear",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolore magna aliqua",
+  },
+  {
+    id: 2,
+    img: shirt2,
+    title: "Printed shirt",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 3,
+    img: shirt3,
+    title: "Women shirt",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];

@@ -1,11 +1,9 @@
 
-
-
 import { useEffect } from "react";
 import { FaStar } from "react-icons/fa"; 
 
 import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 import { ProductsData } from "../../../faker/data"; 
 
@@ -28,7 +26,7 @@ const Product = () => {
           {/* product header section */}
             <div className="text-center max-w-[500px] mx-auto mb-10">
               <p data-aos="fade-up" className="text-sm text-primary"> Top Selling Products for you </p>
-              <h2 data-aos="fade-up" className="font-bold text-3xl"> Products </h2>
+              <h2 data-aos="fade-up" className="font-bold text-3xl mb-"> Products </h2>
               <p data-aos="fade-up" className="text-xs  text-gray-400 "> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi possimus fuga sapiente ut praesentium inventore.</p>
             </div>
           {/* product body section */}
