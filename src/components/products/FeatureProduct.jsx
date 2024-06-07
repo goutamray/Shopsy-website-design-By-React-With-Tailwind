@@ -42,7 +42,7 @@ const FeatureProduct = ({ handleOrderPopup }) => {
             </div>
             {/* bottom button  */}
             <div className="text-center mt-8">
-              <button className="bg-primary px-4 py-2 rounded-md text-white mb-3"> View All Products </button>
+              <button onClick={() => handleOrderPopup()} className="bg-primary px-4 py-2 rounded-md text-white mb-3"> View All Products </button>
             </div>
         </div>
       </div>
