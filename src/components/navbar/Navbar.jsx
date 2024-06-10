@@ -12,7 +12,7 @@ const Navbar = ({ handleOrderPopup }) => {
 
   return (
 
-    <div className="shadow-md bg-white fixed top-0 w-full z-50 'dark:bg-gray-900' dark:bg-white "> 
+    <div className="shadow-md bg-white  'dark:bg-gray-900' dark:bg-white "> 
       {/* upper  */}
       <div className="bg-primary/40 py-3 ">
         <div className="container flex justify-between items-center ">
