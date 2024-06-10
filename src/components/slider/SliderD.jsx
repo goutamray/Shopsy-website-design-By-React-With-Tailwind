@@ -14,7 +14,7 @@ const SliderD = ({ handleOrderPopup }) => {
 
   return (
     <>
-      <div className="relative overflow-hidden bg-gray-200 min-h-[400px] sm:min-h-[550px]  flex justify-center">
+      <div className="relative overflow-hidden bg-gray-200 min-h-[400px] sm:min-h-[550px]  flex justify-center top-36">
         {/* background pattern  */}
         <div className="h-[650px] w-[650px] bg-primary/40 absolute -top-1/2 right-0 rounded-3xl rotate-45 z-10">
 

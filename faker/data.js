@@ -11,6 +11,23 @@ import shirt1 from "../src/assets/shirt.png"
 import shirt2 from "../src/assets/shirt2.png" 
 import shirt3 from "../src/assets/shirt3.png"
 
+// nabar data
+export const dropDown = [
+  {
+    name : "Tending Products",
+    link : "/#",
+  },
+  {
+    name : "Featured Products",
+    link : "/#",
+  },
+  {
+    name : "Top Rated Products",
+    link : "/#",
+  },
+]; 
+
+
 export const ImageList = [
   {
     id: 1,
@@ -105,8 +122,7 @@ export const TopData = [
   },
 ];
 
-
-
+// testimonial data
 export const TestimonialData = [
   {
     id: 1,
@@ -134,6 +150,7 @@ export const TestimonialData = [
   },
 ];
 
+// footer link 
 export const FooterLinks = [
   {
     title: "Home",
