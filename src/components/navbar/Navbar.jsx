@@ -1,5 +1,7 @@
 
 import logo from "../../assets/logo.png"
+
+// react icons 
 import { IoSearch } from "react-icons/io5";
 import { FaCartArrowDown } from "react-icons/fa"; 
 import { FaRegUserCircle } from "react-icons/fa"; 
@@ -9,9 +11,7 @@ import { FaCaretDown } from "react-icons/fa";
 import { dropDown } from "../../../faker/data";
 
 const Navbar = ({ handleOrderPopup }) => {
-
   return (
-
     <div className="shadow-md bg-white  'dark:bg-gray-900' dark:bg-white "> 
       {/* upper  */}
       <div className="bg-primary/40 py-3 ">
@@ -43,15 +43,26 @@ const Navbar = ({ handleOrderPopup }) => {
     <div className="container"> 
     <div className="flex justify-between items-center ">
         <div className="menu py-3">
-          <ul className="flex gap-5 items-center justify-center ">
-            <li> <a className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Home </a></li>
-            <li> <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> About </a></li>
-            <li> <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Shop </a></li>
-        
-            <li> <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Blog </a></li>
+          <ul className="flex gap-4 items-center justify-center ">
+            <li> 
+              <a className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Home </a>
+            </li>
+            <li> 
+              <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> About </a>
+            </li>
+            <li> 
+              <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Blog </a>
+            </li>
+            <li className="hidden xl:block"> 
+              <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Shop </a>
+            </li>
        
             <li className="group relative cursor-pointer "> 
-              <a  className="text-xl font-medium hover:text-primary transition-all duration-300 flex gap-[3px] items-center" href="#"> Trending  <span> <FaCaretDown className=" transition-all duration-200 group-hover:rotate-180"/> </span></a>
+              <a  className="text-xl font-medium hover:text-primary transition-all duration-300 flex gap-[3px] items-center" href="#"> Trending  
+                <span>    
+                  <FaCaretDown className=" transition-all duration-200 group-hover:rotate-180"/> 
+                </span>
+              </a>
               <div className="absolute z-[9999] hidden group-hover:block w-[180px] rounded-md  bg-white p-2 text-black shadow-md"> 
                 <ul >
                   {
@@ -63,12 +74,14 @@ const Navbar = ({ handleOrderPopup }) => {
                 </ul>
               </div>
           </li>
-          <li> <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Contact </a></li> 
+          <li className="hidden xl:block"> 
+            <a  className="text-xl font-medium hover:text-primary transition-all duration-300 " href="#"> Contact </a>
+          </li> 
           </ul>
         </div>
-        <div className="theme-content flex gap-6  xs:hidden">
-          <p className="text-[17px] text-primary font-medium cursor-pointer"> Special Offer </p>
-          <p className="text-[17px] font-medium cursor-pointer"> Pursase Theme</p>
+        <div className="theme-content flex gap-6  ">
+          <p className="text-[17px] text-primary font-medium cursor-pointer hidden xl:block"> Special Offer </p>
+          <p className="text-[17px] font-medium cursor-pointer hidden xl:block"> Pursase Theme</p>
         </div>
      </div>
 

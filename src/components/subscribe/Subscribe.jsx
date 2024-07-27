@@ -6,7 +6,7 @@ const BannerImg = {
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  height: "100%",
+  height: "300px",
   width: "100%",
 };
 
@@ -21,7 +21,7 @@ const Subscribe = () => {
                   <h1 data-aos="fade-up" className="text-2xl !text-center sm:text-left sm:text-4xl font-semibold mb-3"> Get Notified About New Products </h1>
                   <input  type="text" className="w-full p-3 rounded focus:outline-none" placeholder="Enter Your Email"/>
                   <div className="my-btn text-center mt-2">
-                  <button className="bg-blue-500 py-2 px-3 w-[150px] rounded "> Subscribe Now </button>
+                  <button className="bg-blue-500 py-2 px-3 w-[150px] rounded mt-3"> Subscribe Now </button>
                   </div>
                   <p data-aos="fade-up" className="text-center mt-2"> Will be used in accordance with our <a href="#" className="text-md text-blue-600 font-medium"> Privacy Policy </a> </p>
                  </div>

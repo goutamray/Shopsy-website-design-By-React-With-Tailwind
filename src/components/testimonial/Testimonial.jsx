@@ -52,7 +52,7 @@ const Testimonial = () => {
           {/* Testimonial header part */}
           <div className="text-center max-w-[500px] mx-auto mb-10">
               <p data-aos="fade-up" className="text-sm text-primary"> What our customers are saying  </p>
-              <h2 data-aos="fade-up" className="font-bold text-3xl mb-"> Testimonials </h2>
+              <h2 data-aos="fade-up" className="font-bold text-3xl py-2"> Testimonials </h2>
               <p data-aos="fade-up" className="text-xs  text-gray-400 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nihil perspiciatis culpa quidem id aliquid?  </p>
            </div>
           {/* testimonial card */}

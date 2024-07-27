@@ -1,6 +1,9 @@
 
+// images
 import logo from "../../assets/logo.png";
 import footer from "../../assets/footer.jpg"
+
+// react icons 
 import {
   FaFacebook,
   FaInstagram,
@@ -76,11 +79,11 @@ const Footer = () => {
                   </div>
                   <div className="flex gap-3 mt-4">
                     <span> <FaLocationArrow className="text-xl"/>  </span>
-                    <p> Rangpur, Mistripara </p>
+                    <p> Rangpur,Mistripara </p>
                   </div>
-                  <div className="flex gap-3 mt-4">
+                  <div className="flex gap-3 mt-4 w-[100%]">
                     <span> <FaMobileAlt className="text-xl"/>  </span>
-                    <p> +88 01755302053 </p>
+                    <p> +8801755302053 </p>
                   </div>
                 </div>
               </div>

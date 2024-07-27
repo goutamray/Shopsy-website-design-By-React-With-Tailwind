@@ -3,16 +3,14 @@ import { FaStar } from "react-icons/fa";
 import { TopData } from "../../../faker/data";
 
 const TopProduct = ({ handleOrderPopup }) => {
-
-
   return ( 
     <>
        <div className="pt-10 pb-10">
         <div className="container">
             {/* product header section */}
             <div className="text-center max-w-[500px] mx-auto mb-10">
-              <p className="text-sm text-primary"> Top Selling Products for you </p>
-              <h2  className="font-bold text-3xl mb-2"> Best Products </h2>
+              <p className="text-md font-medium text-primary"> Top Selling Products for you </p>
+              <h2  className="font-bold text-3xl mb-2 py-2"> Best Products </h2>
               <p className="text-xs  text-gray-400 "> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi possimus fuga sapiente ut praesentium inventore.</p>
             </div>
             {/* body part */}
@@ -34,8 +32,8 @@ const TopProduct = ({ handleOrderPopup }) => {
                                <FaStar className="text-yellow-500"/>
                                <FaStar className="text-yellow-500"/>  
                            </div>
-                          <h3 className="text-xl font-bold"> {item.title}</h3>
-                          <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2"> {item.description}</p>
+                          <h3 className="text-2xl font-bold py-2"> {item.title}</h3>
+                          <p className="text-gray-500 group-hover:text-white duration-300 text-md line-clamp-2"> {item.description}</p>
                         </div>
                         <div className="flex justify-center items-center mb-4"> 
                            <button onClick={() => handleOrderPopup() } className="bg-primary text-white px-4 py-2 rounded-full hover:scale-105 duration-300 group-hover:bg-white  group-hover:text-primary"> Order Now </button>
